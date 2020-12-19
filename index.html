@@ -69,6 +69,9 @@
             "tmf": 100,
         }
 
+        /**
+         * updates the value table
+         */
         function printTable(){
             let html = "<table>";
             for(let mission of missions){
@@ -84,8 +87,9 @@
         }
 
         /**
-         *
+         * calculates the credits of the mission with the vehicleCredits factor
          * @param neededVehicles{{}}
+         * @returns {number}
          */
         function calculateCredits(neededVehicles){
             let credits = 0;
